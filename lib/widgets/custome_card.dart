@@ -16,7 +16,7 @@ class CustomeCard extends StatelessWidget {
             boxShadow: [
               BoxShadow(
                 blurRadius: 30,
-                color: Colors.grey.withValues(),
+                color: Colors.grey.withValues(alpha: 0.5),
                 spreadRadius: 0,
                 offset: Offset(10, 10),
               ),
@@ -34,7 +34,7 @@ class CustomeCard extends StatelessWidget {
               elevation: 10,
               child: Padding(
                 padding: const EdgeInsets.symmetric(
-                  horizontal: 16,
+                  horizontal: 14,
                   vertical: 10,
                 ),
                 child: Column(
@@ -51,9 +51,9 @@ class CustomeCard extends StatelessWidget {
                         Text(
                           r'$'
                           '${product.price.toString()}',
-                          style: TextStyle(fontSize: 18),
+                          style: TextStyle(fontSize: 16),
                         ),
-                        SizedBox(width: 54.5),
+                        SizedBox(width: 60),
                         Icon(Icons.favorite, color: Colors.red),
                       ],
                     ),
